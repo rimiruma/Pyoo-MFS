@@ -5,6 +5,24 @@ document.getElementById('btn-add-money').addEventListener('click', function(even
 
     const addPinInput = document.getElementById('input-pin-number').value;
     console.log(addPinInput);
+
+    if(addPinInput === '1234'){
+        console.log('adding money account');
+        const balance = document.getElementById('account-balance').innerText
+        console.log(balance);
+        const addMoneyNumber = parseFloat(addMoneyInput);
+        const balanceNumber = parseFloat(balance);
+        const newBalance = addMoneyNumber + balanceNumber;
+        console.log(newBalance);
+        document.getElementById('account-balance').innerText = newBalance;
+        
+        
+        
+        
+    }
+    else{
+        alert('adding please try agin')
+    }
     
     
     
